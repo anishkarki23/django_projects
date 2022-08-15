@@ -6,5 +6,6 @@ urlpatterns = [
     path('room/<str:pk>/', views.room, name='room'),
     #passing the id vlaue in the room
     path('create-room/', views.createroom, name='create-room'),
-    path('update-room/<str:pk>/', views.createroom, name='update-room'),
+    path('update-room/<str:pk>/', views.updateroom, name='update-room'),
+    path('delete-room/<str:pk>/', views.delete, name='delete-room'),
 ]
